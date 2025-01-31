@@ -16,7 +16,7 @@ func main() {
 		fmt.Println("x equals ", x, "y equals ", y)
 	} else {
 		fmt.Println("IN IF: x >= y")
-		fmt.Println("x equals ", x, "y equals ", y)
+		fmt.Println("x equals ", x, ",", "y equals ", y)
 	}
 	fmt.Println("IN MAIN PRINT ONE MORE TIME: ", x, y)
 }
