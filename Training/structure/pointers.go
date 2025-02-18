@@ -13,6 +13,8 @@ func main() {
 	i := uint8(0)
 	i--
 	fmt.Println(i) // 255
+	i -= 5
+	fmt.Println(i)
 
 	fmt.Println(xPtr)  // 0xc000090020
 	fmt.Println(*xPtr) // 2524
