@@ -12,13 +12,13 @@ func main() {
 
 	i := uint8(0)
 	i--
-	fmt.Println(i)
+	fmt.Println(i) // 255
 
 	fmt.Println(xPtr)  // 0xc000090020
 	fmt.Println(*xPtr) // 2524
 	fmt.Println(p)     // nil
-	fmt.Println(*ddx)
-	asd()
+	fmt.Println(*ddx)  // 42
+	asd()              // "asd asd asd"
 }
 
 func asd() {
