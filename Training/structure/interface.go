@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"structure/struc"
+)
 
 func main() {
 	var a interface{} // то же самое, что var a any. Any - это allias for interface {}
@@ -9,6 +12,12 @@ func main() {
 	fmt.Println(a)
 
 	a = "Hello world"
+	fmt.Println(a)
+
+	a = struc.Vova{
+		Name: "Alice",
+		Age:  25,
+	}
 
 	fmt.Println(a)
 
