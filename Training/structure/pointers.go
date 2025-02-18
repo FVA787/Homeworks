@@ -10,6 +10,10 @@ func main() {
 	ddx := new(int)
 	*ddx = 42
 
+	i := uint8(0)
+	i--
+	fmt.Println(i)
+
 	fmt.Println(xPtr)  // 0xc000090020
 	fmt.Println(*xPtr) // 2524
 	fmt.Println(p)     // nil
