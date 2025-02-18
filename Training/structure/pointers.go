@@ -14,4 +14,9 @@ func main() {
 	fmt.Println(*xPtr) // 2524
 	fmt.Println(p)     // nil
 	fmt.Println(*ddx)
+	asd()
+}
+
+func asd() {
+	fmt.Println("asd asd asd")
 }

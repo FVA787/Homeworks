@@ -29,7 +29,8 @@ func main() {
 	fruits := []string{"apple", "banana", "orange"}
 	fmt.Println(len(fruits))
 	fmt.Println(fruits[len(fruits)-3])
-	for i := len(fruits) - 3; i <= len(fruits)-1; i++ {
+	fmt.Println()
+	for i := len(fruits) - 1; i <= len(fruits); i-- {
 		fmt.Println(fruits[i]) // "orange", "banana", "apple"
 	}
 
