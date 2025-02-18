@@ -19,7 +19,7 @@ func main() {
 	var a rune = 'j'
 
 	var x int
-	x = 55
+	x = 56
 	var ptr *int
 	ptr = &x
 
