@@ -10,8 +10,10 @@ func main() {
 		Lastname string
 	}
 	user := struc.Vova{
-		Name: "Alice",
-		Age:  25,
+		Name:  "Alice",
+		Age:   25,
+		Some:  "Hellooooo",
+		Some1: "Hellooooo1",
 	}
 	var user3 User
 	user3.Lastname = "Alice"
