@@ -2,23 +2,24 @@ package main
 
 import "fmt"
 
-func counter() func() int {
-	count := 0 // переменная, замкнутая в области видимости
+func counterasd() func() int { // здесь функция counterasd() возвращает другую функцию func() int {}
+	i := 0 // переменная, замкнутая в области видимости функции func() int {....}
 	return func() int {
-		count++
-		return count
+		i++
+		return i
 	}
 }
 
 func main() {
-	increment := counter() // создаем замыкание
+	increment := counterasd() // создаем замыкание
 	fmt.Println(increment())
 	fmt.Println(increment())
 	fmt.Println(increment())
 	fmt.Println(increment())
 	fmt.Println(increment())
-
-	newCounter := counter() // новый счетчик, независимый от первого
+	fmt.Println(increment())
+	fmt.Println()
+	newCounter := counterasd() // новый счетчик, независимый от первого
 	fmt.Println(newCounter())
 	fmt.Println(newCounter())
 	fmt.Println(newCounter())
