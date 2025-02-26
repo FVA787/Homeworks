@@ -2,12 +2,21 @@ package main
 
 import "fmt"
 
+//func counterasd() func() int { // здесь функция counterasd() возвращает другую функцию func() int {}
+//	i := 0 // переменная, замкнутая в области видимости функции func() int {....}
+//	return func() int {
+//		i++
+//		return i
+//	}
+//}
+
 func counterasd() func() int { // здесь функция counterasd() возвращает другую функцию func() int {}
 	i := 0 // переменная, замкнутая в области видимости функции func() int {....}
-	return func() int {
+	myfunc_which_I_want_to_return := func() int {
 		i++
 		return i
 	}
+	return myfunc_which_I_want_to_return
 }
 
 func main() {
