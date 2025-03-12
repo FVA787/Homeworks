@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-type Rctg struct {
-	height int
-	width  int
+type Lot struct {
+	Buy_price  float64
+	Sale_price float64
 }
 
-func (d Rctg) Area123() int {
-	return d.width * d.height
+func (d Lot) Profit() float64 {
+	return d.Sale_price*0.93 - d.Buy_price
 }
 func main() {
-	rect := Rctg{10, 5}         // Вводим переменную ректангла - какие именно у него длина и ширина
-	fmt.Println(rect.Area123()) // Печать: Внутри синтаксиса:  Объект.Метод Объект - ректангл, метод - Area123,
-	// который описан выше в функции func (d Rctg) Area123() int  (return d.width * d.height). Метод - это функция внутри
+	Novorossiysk := Lot{3825156, 7500000} // Вводим переменную лота - какие именно у него цена покупки и продажи
+	fmt.Println(Novorossiysk.Profit())    // Печать: Внутри синтаксиса:  Объект.Метод: Объект - Здание (Novorossiysk), метод - Profit,
+	// который описан выше в функции func (d Lot) Profit() int  (return d.Sale_price - d.Buy_price). Метод - это функция внутри
 	// структуры, которая может быть вызвана только структурой, и ниоткуда больше.
 }
