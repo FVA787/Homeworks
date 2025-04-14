@@ -14,7 +14,7 @@ func main() {
 	i--
 	fmt.Println(i) // 255
 	i -= 5
-	fmt.Println(i)
+	fmt.Println(i) // 250
 
 	fmt.Println(xPtr)  // 0xc000090020
 	fmt.Println(*xPtr) // 2524

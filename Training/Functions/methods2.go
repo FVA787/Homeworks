@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type User struct {
 	Name   string
@@ -18,8 +20,10 @@ func main() {
 		Age:    20,
 		Salary: 3050,
 	}
-	Salary := 3000
-	fmt.Println(user)
-	fmt.Println(Salary)
-	fmt.Println(user.String())
+	a := new(int)
+	//Salary := 3000
+	fmt.Println(user) // или  fmt.Println(user.String()), но в случае с методом String можно и просто fmt.Println(user).
+	fmt.Println(*a)
+	//fmt.Println(Salary)
+	//fmt.Println(user.String())
 }
