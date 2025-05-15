@@ -18,5 +18,5 @@ func main() {
 	v := Vertex{3, 4}
 	v.Scale(10)
 	fmt.Println(v)
-	fmt.Println(v.Scale(10))
+	//fmt.Println(v.Scale(10))
 }
