@@ -116,5 +116,3 @@ SELECT material_name,
 from materials;
 
 drop view materials_summary;
-
-select (price_2023_12 IS NOT NULL)::int from materials;
